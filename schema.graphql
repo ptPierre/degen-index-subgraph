@@ -1,0 +1,11 @@
+type Pool @entity {
+  id: ID!
+  swap_fee: BigInt
+  tokensList: [Bytes!]
+  totalSupply: BigInt
+}
+
+type Account @entity{
+  id: ID!
+  balance: BigInt!
+}

@@ -1,0 +1,16 @@
+{
+  "name": "degen-index",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ ptPrometheus/degen-index",
+    "create-local": "graph create --node http://localhost:8020/ ptPrometheus/degen-index",
+    "remove-local": "graph remove --node http://localhost:8020/ ptPrometheus/degen-index",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 ptPrometheus/degen-index"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.20.0",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
